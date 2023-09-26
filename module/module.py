@@ -34,7 +34,7 @@ class MLP(nn.Module):
         self.fc1 = nn.Linear(n_in, n_hid)
         self.fc2 = nn.Linear(n_hid, n_out)
         self.bn = nn.BatchNorm1d(n_out)
-        self.dropout_prob = do_prob  # dropout 概率
+        self.dropout_prob = do_prob 
 
         self.init_weights()
 
@@ -53,7 +53,6 @@ class MLP(nn.Module):
         return x.view(inputs.size(0), inputs.size(1), -1)
 
     def forward(self, inputs):
-        # Input shape: [num_sims, num_things, num_fe  atures]
         x = F.elu(self.fc1(inputs))
         x = F.dropout(x, self.dropout_prob, training=self.training)
         x = F.elu(self.fc2(x))
