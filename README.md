@@ -2,11 +2,11 @@
 In this work, we provides an idea on how to mining the interaction among long time series with supervised learning。Sepecially, we designed an deep learning model to directly establish the mapping from temporal signal to explicit causality graph instead of mapping for signal fitting. The model was trained with labeled data in a supervised way and can generalize universal causal inference knowledge, which means it can directly infer the potential directed relationships of new samples based on the learned experience.
 
 ## environment
-numpy shubld be <= 1.16.5
-torch	1.9.0	
-torchaudio	0.9.0	
-torchvision	0.10.0
-python 3.7
+- numpy shubld be <= 1.16.5
+- torch	1.9.0	
+- torchaudio	0.9.0	
+- torchvision	0.10.0
+- python 3.7
 
 ## Introduction of training set
 During the training process, the input and output training samples are as follows. In Figure (a), we use real signal amplitude information and multivariate autoregressive models to iteratively generate multi-dimensional time series signals, where each node corresponds to a one-dimensional time series signal. Figure (b) is the relationship interaction (label), a[i][j] represents the information flow relationship from node j to node i (the matrix is transposed during training). Figure (c) shows the directed connection pattern between nodes. The red line represents the bi-connection, and the connection with an arrow represents the flow of information from node j to node i.
