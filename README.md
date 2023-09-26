@@ -1,5 +1,5 @@
 # A Spatio-Temporal Neural Relation Extraction Model for Mapping End-to-End Brain Directed Network 
-In this work, we provides an idea on how to mining the interaction among long time series with supervised learning。Sepecially, we designed an deep learning model to directly establish the mapping from temporal signal to explicit causality graph instead of mapping for signal fitting. The model was trained with labeled data in a supervised way and can generalize universal causal inference knowledge, which means it can directly infer the potential directed relationships of new samples based on the learned experience.
+In this work, we provides an idea on how to mining the interaction among long time series with supervised learning. Sepecially, we designed an deep learning model to directly establish the mapping from temporal signal to explicit causality graph instead of mapping for signal fitting. The model was trained with labeled data in a supervised way and can generalize universal causal inference knowledge, which means it can directly infer the potential directed relationships of new samples based on the learned experience.
 
 ## environment
 - numpy shubld be <= 1.16.5
