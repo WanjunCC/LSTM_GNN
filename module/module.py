@@ -53,7 +53,6 @@ class MLP(nn.Module):
         return x.view(inputs.size(0), inputs.size(1), -1)
 
     def forward(self, inputs):
-        # Input shape: [num_sims, num_things, num_fe  atures]
         x = F.elu(self.fc1(inputs))
         x = F.dropout(x, self.dropout_prob, training=self.training)
         x = F.elu(self.fc2(x))
