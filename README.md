@@ -14,3 +14,13 @@ The main model structure is presented as followed, which requires multivariate t
 subfigure (a) presents the structure of the main model; below it, subfigures (b)-(c) show the detailes submodules in spatio-temporal neural relation extraction(STNRE), including the architecture of node to edge (b), edge to node (c), Multi-LSTMs (d) and LSTM (e). 
 
 ## Performance test (partial display)
+Comparison using a wide range of tools: Granger causality analysis
+### Simulation results
+Recovery of predefined network patterns with 50 runs at different SNRs, where the red line represents the main network patterns captured by both models (the first is ours). Line thickness represents the total numbers this connection appears in the 50 runs of simulation, and the distinct color indicates the predominance of a connection, i.e., the line appears more (red) or less (gray) than μ+σ times in the 50 runs of simulations. 
+![recovery](https://github.com/WanjunCC/LSTM_GNN/blob/main/image/result1.png)
+
+Our model can be generalized in the causal inference for sequences of different lengths or different numbers of node. We compare the time costs of the two methods under different input forms (sequence length, number of nodes), and our method has the advantage in time cost.
+![Timecost](https://github.com/WanjunCC/LSTM_GNN/blob/main/image/result2.png)
+
+### Real Signal test
+
