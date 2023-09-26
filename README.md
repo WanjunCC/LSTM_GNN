@@ -43,7 +43,7 @@ Network consistency under different epoch lengths(mean ± standard deviation). A
 ![network](https://github.com/WanjunCC/LSTM_GNN/blob/main/image/result4.png)
 
 
-under different epoch lengths, both DeepNNetDNE and GCA show relatively consistent topologies that mainly involve connections symmetrically distributed in frontal, posterior parietooccipital, and posterior temporal regions. However, comparatively, the network estimated by DeepNNetDNE has higher consistency among different epoch lengths than that of GCA. 
+Under different epoch lengths, both DeepNNetDNE and GCA show relatively consistent topologies that mainly involve connections symmetrically distributed in frontal, posterior parietooccipital, and posterior temporal regions. However, comparatively, the network estimated by DeepNNetDNE has higher consistency among different epoch lengths than that of GCA. 
 As shown, DeepNNetDNE keeps relatively high consistency under different epoch lengths (higher than 0.57±0.05); and most of the time, is significantly higher than that of GCA (paired t-test, one tail, p<0.000). For GCA, the consistency under different epoch lengths is relatively lower, especially between the short (2 s or 4 s) and long epoch lengths (6 s or 8 s), e.g., 2 s vs. 8 s: 0.310±0.071. Only under the long epoch lengths, the GCA obtained higher consistency than DeepNNetDNE (i.e., the highest consistency of GCA, 6 s vs. 8 s: 0.822±0.060) but is lower than the highest consistency of DeepNNetDNE (4 s vs. 6 s: 0.913±0.028).
 
 More test result are presented in our paper！
